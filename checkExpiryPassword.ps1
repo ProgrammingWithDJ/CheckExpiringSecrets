@@ -44,10 +44,6 @@ foreach ($application in $applications)
     Write-Output "Display name: $($application.displayName)"
     Write-Output "Password credentials:"
 
-if ($passwordCredential -eq $null) {
-}
-else
-{
     foreach ($passwordCredential in $application.passwordCredentials)
     {
          if ($passwordCredential.endDateTime -eq $null) {
@@ -70,9 +66,10 @@ if ($daysUntilDate -lt 14) {
     
   }
 }
-}
+
 
       
     }
+    
     
 
