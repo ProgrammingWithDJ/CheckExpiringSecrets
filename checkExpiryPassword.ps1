@@ -12,6 +12,21 @@
 #Connect-AzureAD -ApplicationId  $Connection.ApplicationId -TenantId $Connection.TenantId -CertificateThumbprint $Connection.CertificateThumbprint
 #-----------------------------------------------------------
 
+
+#-----------------------------------------------------------
+
+#Graph Modules
+#$Connection = Get-AutomationConnection -Name AzureRunAsConnection
+# Get certificate from the automation account
+#$Certificate = Get-AutomationCertificate -Name AzureRunAsCertificate
+
+
+
+# Connect to the Graph SDK endpoint using the automation account
+#Connect-AzureAD -ApplicationId  $Connection.ApplicationId -TenantId $Connection.TenantId -CertificateThumbprint $Connection.CertificateThumbprint
+
+#-----------------------------------------------------------------------------
+
 Import-Module AzureAD
 
 # Connect to Azure AD
