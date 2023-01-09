@@ -1,4 +1,17 @@
 # Import the Azure AD module
+
+
+#For RunBook-------------------------------------------------------------------------------
+#$Connection = Get-AutomationConnection -Name AzureRunAsConnection
+# Get certificate from the automation account
+#$Certificate = Get-AutomationCertificate -Name AzureRunAsCertificate
+
+
+
+# Connect to the Azure SDK endpoint using the automation account
+#Connect-AzureAD -ApplicationId  $Connection.ApplicationId -TenantId $Connection.TenantId -CertificateThumbprint $Connection.CertificateThumbprint
+#-----------------------------------------------------------
+
 Import-Module AzureAD
 
 # Connect to Azure AD
