@@ -68,6 +68,22 @@ if ($daysUntilDate -lt 14) {
 }
 
 
+  $userId = "xx@cqons.onMicrosoft.com"
+
+# Prepare the message object
+$message = @{
+    subject = "Test email sent using the Microsoft Graph API"
+    toRecipients = @(@{emailAddress = @{address = "xxxx@cqons.onMicrosoft.com"}})
+    body = @{
+        contentType = "Text"
+        content = "This is a test email sent using the Microsoft Graph API"
+    }
+}
+
+# Send the email
+Send-MgUserMail -UserId $userId -Message $message 
+
+
       
     }
     
