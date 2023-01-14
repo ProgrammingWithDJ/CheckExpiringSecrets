@@ -2,6 +2,8 @@
 PowerShell script to check expiring client secrets
 
 
+I am using Azure Automation Runbook to run the script in this gitHubRepo
+
 Modules needed to run Graph API in Azure RunBook
 
 • Microsoft.Graph.Authentication: to authenticate against the Graph.
